@@ -1,0 +1,96 @@
+/* Move body down to accommodate toolbar */
+body.tab-toolbar { margin-top: 35px !important; }
+body.tab-toolbar-secondary { margin-top: 50px !important; }
+
+body.tab-toolbar ul.tabs.primary { 
+    background: #ccc;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    left: 0;
+    position: fixed;
+    text-align: left;
+    text-transform: none;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px #999;
+    padding: 5px 20px;
+    height: auto;
+    z-index: 100;
+    display: inline-block; border-bottom: none; margin: 0;
+}
+body.tab-toolbar-secondary ul.tabs.primary { height: 50px; }
+body.tab-toolbar-secondary ul.tabs.secondary { padding: 0 20px; position: fixed; top: 40px; left: 0; z-index: 101; background: transparent; }
+
+body.tab-toolbar ul.tabs.primary li a, body.tab-toolbar ul.tabs.primary li a:link, 
+body.tab-toolbar-secondary ul.tabs.secondary li a, body.tab-toolbar-secondary ul.tabs.secondary li a:link, 
+body.page-node.tab-toolbar  #edit-trigger-link,
+body.tab-toolbar #l10n-client .labels .toggle {
+    font-size: 13px;
+    background: #05AAF7;
+    padding: 4px 10px;
+    color: #fff;
+    margin-right: 8px;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: auto;
+    line-height: normal;
+    text-decoration: none important;
+    font-weight: normal;
+    text-shadow: none;
+    text-decoration: none !important;
+}
+body.tab-toolbar-secondary ul.tabs.secondary li { margin: 0; }
+body.tab-toolbar-secondary ul.tabs.secondary li a, body.tab-toolbar-secondary ul.tabs.secondary li a:link { /* color: #666; */ font-size: 11px; background: #53CCFF; }
+
+body.tab-toolbar ul.tabs.primary li a:hover,
+body.tab-toolbar ul.tabs.primary li a.active {
+    background: #53CCFF;
+    border: none;
+}  
+
+body.tab-toolbar ul.tabs.secondary li a:hover,
+body.tab-toolbar ul.tabs.secondary li a.active {
+    background: #99DEFF;
+    border: none;
+}  
+
+/* Edit module integration */
+/* Older versions of edit module had edit link in block */
+body.tab-toolbar #block-edit-edit h2 { display: none; }
+body.tab-toolbar #edit-trigger-link, body.page-node-add #edit-trigger-link { display: none; }
+body.page-node.tab-toolbar #edit-trigger-link { right: 27px; }
+body.page-node.tab-toolbar #edit-trigger-link, body.tab-toolbar #l10n-client { 
+    display: block; position: fixed; top: 0; z-index: 1000; font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+/* Localization client integration */
+body.tab-toolbar #l10n-client { bottom: auto; box-shadow: 3px 3px 5px #aaa; }
+body.tab-toolbar #l10n-client .labels { height: auto; background-color: #ccc; color: #222;}
+body.tab-toolbar #l10n-client .labels .toggle { margin: 0; z-index: 101; text-transform: none; margin-right: 27px; color: #fff; }
+body.tab-toolbar.admin-menu #l10n-client .labels .toggle {  }
+
+/* Allow for toolbars created by other modules */
+body.tab-toolbar.admin-menu { margin-top: 55px !important; }
+body.tab-toolbar.domain-admin-menu { margin-top: 35px !important; }
+body.tab-toolbar.domain-admin-menu-combined { margin-top: 55px !important; }
+body.tab-toolbar-secondary.admin-menu { margin-top: 70px !important; }
+
+body.page-node.tab-toolbar.admin-menu #edit-trigger-link { top: 26px; }  
+body.page-node.tab-toolbar.admin-menu #l10n-client { top: 26px !important; }
+body.tab-toolbar.domain-admin-menu.l10n-client #edit-trigger-link { right: 150px; top: 41px; } 
+body.tab-toolbar.domain-admin-menu.l10n-client #l10n-client { top: 41px !important; } 
+body.tab-toolbar.domain-admin-menu-combined.l10n-client #edit-trigger-link { right: 150px; top: 61px; } 
+body.tab-toolbar.domain-admin-menu-combined.l10n-client #l10n-client { top: 61px !important; } 
+body.tab-toolbar.admin-menu ul.tabs.primary { top: 20px; }
+body.tab-toolbar.admin-menu ul.tabs.secondary { top: 55px; }
+body.tab-toolbar.domain-admin-menu ul.tabs.primary { top: 35px; }
+body.tab-toolbar.domain-admin-menu ul.tabs.secondary { top: 70px; }
+body.tab-toolbar.domain-admin-menu-combined ul.tabs.primary { top: 55px; }
+body.tab-toolbar.domain-admin-menu-combined ul.tabs.secondary { top: 90px; }
+
+
+
+
+
+

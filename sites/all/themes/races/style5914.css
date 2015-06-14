@@ -1,0 +1,1219 @@
+ 
+
+  /* Handle small screen first, then larger screens in media queries */
+  html { font-size: 62.5%; } 
+  body { background-color: #bddbed; color: #264d6b; font-size: 1.25em; font-size: 1.25rem; line-height: 1.45; margin: 0; padding: 0; } 
+
+  /* Fonts */
+
+  body, input, 
+  .ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button,
+  .view-list-event-previous-results.view-display-id-page main h1,
+  .modal-content form { 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  h1, .site-name, footer h4, 
+  .view-list-event-previous-results.view-display-id-page .view-content > h3,
+  #front-opening-box .field-collection-view h2, .domain-front .display-listing h2, .domain-front .display-playlist h2 { 
+    font-family: 'HelveticaInseratW02-Rg', 'HelveticaInseratLTW10-R', 'Hattenschweiler', 'Impact',sans-serif; font-weight: normal;
+  }
+  strong, b,
+  #display-page-wrapper h1, .node-type-book #content article h1#page-title, 
+  #term-information h1, h2, h3, h4, h5, h6, 
+  .button, input[type="submit"], 
+  article a, #event-first-section-box-links, .ui-widget-header .ui-state-default a { 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  }
+
+  #header #navigation ul.menu li { font-family: 'ITCFranklinGothicW02-Bk_812927', 'ITCFranklinGothicW10-Bk 862342', 'Arial Narrow', Arial, sans-serif; }
+
+  /* Layout, elements and common classes */
+
+  .section { width: 92%; margin: 0 4%; padding: 0; }
+
+  #content { display: inline; position: relative; width: 100%; }
+
+  .messages { position: absolute; top: 100px; right: 0; z-index: 10000;}
+  
+  h1, h2, h3, h4, h5, h6 { color: #045d97; line-height: 1.2;  }
+  img { height: auto; max-width: 100%; }
+  a { text-decoration: none;  }
+  p { margin: 0 0 1em 0; padding: 0; }
+  hr { border: 0px none; height: 1px; color: rgb(171, 202, 220); background-color: rgb(171, 202, 220); margin: 0.5em 0px 1em; }
+  tbody { border-top: none; }
+
+  article a, #event-third-section .ui-tabs-panel.ui-widget-content a, h3.ui-accordion-header a,
+  #event-view-header a, #result-header a, .single-result-opened-files a { color: #679ec0; font-weight: bold; } 
+  article .table-wrap { width: 100%; overflow-x: scroll; }  
+  article table { font-size: .92em; max-width: 100%; }
+  article table tr { background: transparent !important; border-bottom: 1px #bddbed solid !important; }
+  article table tr td { padding: 5px 2px; }
+
+  #main-wrapper { min-height: 250px; }
+  #main-wrapper p, #main-wrapper ul, #main-wrapper blockquote { max-width: 520px; }
+  #main-wrapper ul { margin-left: 0; padding-left: 1em; }
+  #main-wrapper ul li { margin-bottom: .5em; }
+
+  h1.title { letter-spacing: .04em; font-size: 3em; margin: 1em 0 .7em 0; color: #222; font-weight: normal; line-height: 1.15em; } 
+  .button, input[type="submit"], .ctools-use-modal, a.views-more-link,
+  ul.pager .pager-previous a, ul.pager .pager-next a { padding: 2px 6px; font-weight: bold; color: #045d97; background-color: #fff; width: auto; border-radius: 4px; display: inline-block; clear: left; border: none; font-size: 1em; line-height: 1.2; }
+  .shadow { box-shadow: 0 0 20px rgba(91, 131, 158, .85); }
+  .field-collection-container { border-bottom: none; margin-bottom: 0; }
+
+  /* Header */
+  #main-wrapper { padding-top: 82px; }
+
+  #header { line-height: 1.4; background: #045d97; background: linear-gradient(to bottom, #001c30 0%, #045d97 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); border-bottom: 5px #66b6e7 solid; position: fixed; width: 100%; z-index: 45;}
+  #header .section { position: relative; }
+  #header form { display: none; margin: 12px 0 6px 0;}
+  #header form input[type="text"] { box-sizing: border-box; -moz-box-sizing: border-box; width: 100%; padding: 4px 4px 4px 23px; background: #2673b6 url(http://www.srichinmoyraces.org/sites/all/themes/races/images/search.png) 8px 50% no-repeat; background-size: 10px 12px; color: #dbedf4; border: none; border-radius: 10px; font-size: .87em; }
+  #header form input[type="submit"] { display: none; }
+
+  #header h1, #header h2 { border-bottom: 1px solid #66b6e7; clear: right; font-size: 1.4em; font-weight: normal; letter-spacing: 0.04em; margin: 0 0 0 -4%; padding: 10px 4% 10px; width: 100%; }
+  #header a { color: #fff; }
+  #header a#logo img { display: block; float: left; margin-right: 8px; width: 20px; height: 20px; }
+  #header a#logo .site-name { padding-top: 10px; color: #fff; line-height: 1.1; }
+
+  ul.menu li { list-style: none; }
+  ul.menu { margin: 0; padding: 0; }
+  
+  #header #navigation {  }
+  #header #navigation ul.menu { font-size: 1.2em; margin-left: -6px;}
+  #header #navigation ul.menu li { text-transform: uppercase; padding: 0; margin: 0; text-align: center; display: block; float: left;}
+  #header #navigation ul.menu li.navtext { width: 26%; }
+  #header #navigation ul.menu li.navimage { width: 10%; }
+  #header #navigation ul.menu li a { color: #fff; padding: 10px 5px 5px 5px; display: block; }
+  #header #navigation ul.menu li a .homeimg { margin-bottom: -1px; max-width: 18px; max-height: 18px; } 
+  #header #navigation ul.menu li .searchimg { margin-bottom: 1px; max-width: 18px; max-height: 18px; } 
+  #header #navigation ul.menu li.last { margin-right: 0; }
+  #header #navigation ul.menu li.mobilelast { margin-right: 0; padding: 10px 0 0 5px; cursor: pointer; }
+  #header #navigation ul.menu li.collapsed { list-style: none; }
+  .navarea { display: none; }
+
+
+  /**************************************/
+  /*   Article                   */
+  /**************************************/
+
+  .page-taxonomy-term .term-page { margin-top: 30px; }  
+  .term-page { position: relative; }
+
+  #term-article-listing { width: 100%; padding: 0 0 0 0; }
+  #term-article-listing main { margin: 0 0 25px 0; }
+  #term-article-listing article { background: #f2f2f2; background: linear-gradient(to bottom, #f2f2f2 0%, #d1d1d1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); position: relative; padding-top: 15px; margin-bottom: 0; }
+  #term-article-listing .page-body { padding: .5em 0; }
+  #term-article-listing .page-body,
+  #term-article-listing .page-header { width: 84% !important; margin: 0 8% 0 8% !important; padding-bottom: 15px; }  
+  #term-article-listing .views-row { margin-bottom: 15px; }
+
+  .page-header, .page-body { width: 88%; margin: 0 6% 15px 6%; }
+  .page-header h1#page-title { margin: 0; padding: 0 0 .2em 0; font-weight: bold; font-size: 1.8em; }
+  .page-header h2 { margin: 0; padding: 0 0 .1em 0; }
+  .page-header-submitted { font-size: .85em; }
+  .page-header-name { max-width: 47%; float: left; }
+  .page-header-date { max-width: 47%; float: right; }
+  .originally-posted { width: 100%; font-style: italic; margin-bottom: 1em; }
+
+  .author-name { margin-right: 13px; }
+  .author-link { color: #679ec0; cursor: pointer; display: inline-block; }
+  .author-profile { display: none; width: 84%; padding: 10px 8%; border-top: 1px #aaa solid; border-bottom: 1px #aaa solid; font-style: italic; font-size: .9em; }
+  .author-profile h4 { margin-bottom: .2em; }
+  .author-profile img { width: 75px !important; height: 100px !important; float: left; margin-right: 5%; }  
+
+  .node-type-book #content article > img {  }
+  #main-wrapper .item-slider { position: relative; }
+  #main-wrapper .item-slider ul.item-slides { max-width: none; margin: 0; padding: 0; }
+  #main-wrapper .item-slider ul.item-slides > li { margin: 0; padding: 0; }
+  .item-slider ol.flex-control-nav { height: 10px; display: block; max-width: none; margin: 0; padding: 14px 55px 14px 10px; background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/bluebg.png); position: absolute; z-index: 15; bottom: 12px; right: 0; top: auto; width: auto; border-radius: 5px 0 0 5px; }  
+  .item-slider ol.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; display: inline;}
+  .item-slider ol.flex-control-paging li a {width: 10px; height: 10px; display: block; float:left; margin-left: 7px; background: #fff; background: rgba(255,255,255,1); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+  /*.flex-control-paging li a:hover { background: #ddd; background: rgba(255,255,255,0.7); }
+  .flex-control-paging li a.flex-active { background: #fff; background: rgba(255,255,255,0.9); cursor: default; } */
+  .item-slider ol.flex-control-paging li a:hover, .item-slider ol.flex-control-paging li a.flex-active { background: rgba(230,0,0,0.9); cursor: default; }
+  .item-slider ul.flex-direction-nav { margin-left: 0 !important; padding-left: 0 !important; position: absolute; list-style: none; z-index: 16; bottom: 24px; right: 10px !important; width: 55px; top: auto; left: inherit !important; }
+  .item-slider ul.flex-direction-nav a.flex-prev {left: 0;}
+  .item-slider ul.flex-direction-nav a.flex-next {left: 30px;}
+
+  #term-article-listing .views-row .item-slider ol.flex-control-nav { padding-right: 80px; bottom: 5px; }
+  #term-article-listing .views-row .item-slider ul.flex-direction-nav a.flex-prev { top: -7px; }
+  #term-article-listing .views-row .item-slider ul.flex-direction-nav { bottom: 18px; display: none; } 
+  #term-article-listing .views-row .item-slider ol.flex-control-nav { display: none; }
+
+  .page-terms { background: #003557; width: 88%; padding: 7px 6%; }
+  .page-terms a { font-weight: normal; margin-right: 20px; color: #bddbed !important; }
+  .page-terms a:after { content: ' »'; }
+
+  .page-body { padding: 1.5em 0 0 0; }
+  .page-body img { width: 100% !important; height: auto !important; }
+  .page-body img.left { float: left; max-width: 40%; width: auto; height: auto; margin: 0 20px 5px 0; } 
+  .page-body img.right { float: right; max-width: 40%; width: auto; height: auto; margin: 0 0 5px 20px; } 
+
+  .initial-teaser { height: 250px; overflow: hidden; position: relative; }
+  .teaser-ending { position: absolute; bottom: 0; left: 0; width: 100%; }
+  .teaser-ending-fade {  background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/article-teaser-gradient.png) bottom left repeat-x scroll; height: 100px; width: 100%; z-index: 25;}
+  .teaser-ending-more { cursor: pointer; border-top: 1px #aaa solid; background: #d2d2d2; width: 84%; padding: 10px 8%; text-align: right; }
+  
+  h2.listing-page-title { font-size: 1.6em !important; margin: 0; padding: 1.2em 0 .3em 0; }
+  .page-body h2, .node-type-book #content article .page-body h3, .node-type-book #content article .page-body h4 { font-size: 1.1em; font-weight: bold; }
+
+  .term-page #page-sidebar { left: -4%; width: 100%; padding-right: 4%; position: relative; z-index: 20; margin-top: -30px; background-color: #66b6e7; margin-bottom: 20px; padding: 4px 4% 12px 4%; box-shadow: 0 0 5px rgba(91, 131, 158, .85); }
+  .node-type-book .term-page #page-sidebar { margin-top: 1px; }
+  #page-sidebar a { color: #045d97;  }
+  #page-sidebar ul { margin-bottom: 1.5em; margin-left: 0; padding-left: 0; max-width: 90%; }
+  #page-sidebar ul li { line-height: 1.2; margin-bottom: .5em; }
+  #page-sidebar .view { display: none; width: 100%; }
+  #page-sidebar .view select { max-width: 100%; }
+  #page-sidebar .expanded .view { display: block; }
+  #page-sidebar img {display: none; width: 40%; float: right;}
+
+  #term-description { display: none; line-height: 1.3; }
+  #term-description .term-lastpara { display: inline;  }
+
+  #term-information h1, #term-information h2 { font-weight: bold; margin: 0; font-size: 1.3em; display: inline-block; margin-right: 5px;  }
+  .term-page #page-sidebar .mobile-expand-link { color: #eee; cursor: pointer; display: inline-block; }
+  .page-taxonomy h1.title { display: none; } 
+  #term-information { width: 100%; display: block; }
+  #term-information > a { display: none; }
+
+  #term-image-and-title { position: relative; }
+  
+  /* search navigation */
+  #term-information.views-exposed-form { display: inline-block; width: 100%; }
+  #term-information .views-exposed-form .views-exposed-widgets { margin-bottom: .3em; }
+  #term-information .views-exposed-form .views-exposed-widget { padding: 1em .4em 0 0; position: relative; }
+  #term-information input[type="text"] { border: none; padding: 4px 4%; border-radius: 2px; background: #f0f0f0; min-width: 150px; font-size: 1em; color: #777;}
+  #term-information .views-exposed-form .views-exposed-widget .form-submit { display: inline; margin-top: .1em; padding-top: 5px; padding-bottom: 5px; }
+
+  /* jump menu and event link */
+  #page-sidebar .view-display-id-jumpmenu_manual_samepage input[type="submit"], #page-sidebar .view-display-id-jumpmenu_samepage input[type="submit"] { display: none; }
+  #page-sidebar .article-event-link { clear: none; text-align: center; margin-top: 1em; } 
+
+  /* related articles */
+  #page-sidebar .view-articles-refer-to-same-event h3 { border-top: 1px #003357 solid; margin: .5em 0; padding-top: .5em; line-height: 1.15em; }
+  #page-sidebar .view-articles-refer-to-same-event ul { margin-bottom: 1em !important; }
+  #page-sidebar .view-articles-refer-to-same-event ul li { margin-bottom: .3em !important; }
+
+  /* Article archive */
+
+  .page-articles-archive .views-row { margin-bottom: 15px; }
+  .page-articles-archive .views-row article { background: #f2f2f2; background: linear-gradient(to bottom, #f2f2f2 0%, #d1d1d1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); padding: 15px 0; }
+  .page-articles-archive h1#page-title { text-align: center; font-size: 1.9em; margin: 1em 0 .5em 0; color: #045d97;}
+  .page-articles-archive .views-exposed-form, .page-articles-archive ul.pager { background-color: #66b6e7; padding: 10px 4%; border-radius: 3px;  margin: 0 0 15px 0; max-width: none !important;}
+
+
+  /*************************/
+  /*     Event page        */
+  /*************************/
+
+  #event-first-section img { width: 100%; height: auto; }
+  #event-first-section .section { position: relative; z-index: 40; }
+  #event-first-section-box { position: static; width: 92%; background: #c1dded; padding: 10px 4%; }
+  #event-first-section-box h1 { font-size: 1.7em; margin: .1em 0 .3em 0; text-align: center; /* color: #264d6b; */ }
+  #event-first-section-box #event-date-location { text-transform: uppercase; margin-bottom: .7em; width: 100%; font-size: .95em;}
+  #event-first-section-box #event-date-location .event-date-display { background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/mobile-event-clock.png) 0 0 no-repeat; background-size: 14px 14px; padding-left: 22px; }
+  #event-first-section-box #event-date-location .location { background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/mobile-event-place.png) 2px 3px no-repeat; background-size: 9px 14px; padding-left: 22px; margin-top: 3px;  }
+  #event-first-section-box p { margin-bottom: 1em; max-width: 470px; }
+  #event-first-section-box a.button { text-transform: none; margin-top: 1px; }
+  ul#event-first-section-box-links { margin: 0; padding: 0; }
+  ul#event-first-section-box-links li { text-align: right; font-size: 1.2em; list-style: none; float: left; margin-right: 0; width: 50%; margin-bottom: 0; font-weight: bold; }
+  ul#event-first-section-box-links li:first-child, ul#event-first-section-box-links li:last-child { text-align: left; }
+  ul#event-first-section-box-links li a { color: #045d97; padding: 2px 0; display: block; }
+
+  .node-type-event h2 { text-align: center; }
+
+  .event-body-section { margin-bottom: 30px; }
+  .event-body-section .section { background: #fff; }
+  .event-body-section h2, .event-body-section h3, .event-body-section h4 { text-transform: uppercase; font-weight: bold; }
+  #event-second-section { margin-top: -20px; position: relative; z-index: 5; }
+  
+  #event-second-section-introduction { background: #fff; width: 90%; padding: 12px 5%; } 
+ 
+  #event-second-section-belowintro { width: 100%; }
+  #event-second-section-belowintro h2 { font-size: 1.2em; margin-bottom: .5em; margin-left: 3%; display: inline-block; margin-right: 7px}
+  #event-second-section-belowintro p { margin-bottom: .5em; }
+
+  #event-second-section-belowintro .view-results-single-event { width: 94%; padding: 1px 3% 10px 3%; }
+  #event-second-section-belowintro .view-results-single-event .view-content > div { display: inline; }
+  #event-second-section-belowintro .view-results-single-event .view-content > div a { padding-right: 5px; }
+  #event-second-section-belowintro .view-results-single-event .view-content > div:first-child a { font-size: 1.3em; } 
+
+  #event-second-section-newsletter { padding: 20px 3%; }
+
+  /* #event-second-section-previous-results { border-top: 1px #b2d5f1 solid; margin-top: 2.5em; padding-top: 1em; }
+  #event-second-section-previous-results h2 { margin-top: 0; display: inline-block; float: left; width: 50%; margin-right: 3%; }
+  #event-second-section-previous-results .results-body { float: left; width: 47%; }
+  #event-second-section-previous-results div a { padding-right: 7px; font-size: 1.1em; }
+  #event-second-section-previous-results div a:first-child { font-size: 1.4em; }  */
+  
+  #event-second-section-video { margin-top: 10px; background: #c1dded; padding: 1px 3% 15px 3%; }
+  #event-second-section-video h2 { font-size: 1.2em; margin-bottom: .5em; }
+
+  #event-second-section-details { background: #003557; color: #fff; font-size: .9em; border: 12px #fff solid; width: 100%; padding: 12px 5%; box-sizing: border-box; } 
+  #event-second-section-details h3 { color: #b2d5f1; margin: .8em 0 .1em 0; }
+  #event-second-section-details h4 { color: #fff; text-transform: none; margin: 1em 0 .4em 0; font-size: 1.1em; }
+  #event-second-section-details ul { margin: 0 0 1em 0; padding: 0; }
+  #event-second-section-details ul.event-info-grouped { margin-bottom: 2.5em; }
+  #event-second-section-details ul li { list-style: none; position: relative; margin-bottom: .3em; }
+
+  #event-second-section-details ul li.start-time, #event-second-section-details ul li.cost { margin-top: 3px; } 
+  #event-second-section-details ul li .details-icon { position: absolute; width: 16px; height: 16px; top: 2px; }
+  #event-second-section-details ul li .details-text { padding-left: 23px; }
+  #event-second-section-details ul li .details-text ul { margin-bottom: 5px; }
+  #event-second-section-details ul li.start-time .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/clock.png) no-repeat; background-size: contain;}
+
+  /* Currency icons for different countries */
+  #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/dollar.png) no-repeat; background-size: contain;}
+  .domain-fr-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-fr-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon,
+  .domain-de-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-de-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon,
+  .domain-at-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-at-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon,
+  .domain-nl-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-nl-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/euro.png) no-repeat; background-size: contain;}
+  .domain-uk-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-uk-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/pound.png) no-repeat; background-size: contain;}  
+  .domain-jp-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-jp-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/yen.png) no-repeat; background-size: contain;}  
+  .domain-cs-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-cs-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/czech-koruna.png) no-repeat; background-size: contain;}  
+  .domain-hu-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-hu-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/hungarian-forint.png) no-repeat; background-size: contain;} 
+  .domain-is-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-is-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/icelandic-krone.png) no-repeat; background-size: contain;} 
+  .domain-lv-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-lv-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/latvian-lats.png) no-repeat; background-size: contain;}
+  .domain-mk-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-mk-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/macedonian-denar.png) no-repeat; background-size: contain;} 
+  .domain-mn-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-mn-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/mongolian-togrog.png) no-repeat; background-size: contain;}  
+  .domain-ru-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-ru-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/ruble.png) no-repeat; background-size: contain;}  
+  .domain-rs-vs-racestestingorg #event-second-section-details ul li.cost .details-icon,
+  .domain-rs-srichinmoyracesorg #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/serbian-dinar.png) no-repeat; background-size: contain;}  
+
+  #event-second-section-details ul li.cost .details-icon { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/currencies/dollar.png) no-repeat; background-size: contain;}
+  
+  #event-second-section-details h3.details-contact-info-heading, 
+  #event-second-section-details h3#event-award-categories,
+  #event-second-section-details h3#event-certification-info { border-top: 2px #b2d5f1 solid; padding-top: 2em; margin-top: 1.5em; }
+
+  .modal-content form { padding: 0 2em 2em 2em; font-size: 1.2em; }
+  .modal-content form input[type="text"] { max-width: 100% !important; }
+  .modal-content form input[type="submit"] { background: #bddbed; font-size: 1.2em; padding: 4px 9px;}
+
+  #event-second-section-entrylinks { }
+  #event-second-section-entrylinks .entrylink-cell a.button, 
+  #event-second-section-entrylinks .entrylink-cell a.ctools-use-modal { padding-bottom: 5px !important; background-color: #bddbed; color: #003557; margin-bottom: 5px; line-height: 1.2; padding: 4px 6px; } 
+  
+   #event-second-section-details a.course-map { background: transparent !important; color: #bddbed !important; font-weight: normal !important; padding: .2em 0 !important; }
+
+  #event-certification-logos { display: table; margin-top: 20px; width: 100%; }
+  .event-certification-logos-row { display: table-row; margin-bottom: 20px; }
+  .event-certification-logos-cell { display: table-cell; vertical-align: top; padding: 10px 0; }
+  .event-certification-logos-cell img { width: 100%; height: auto; } 
+  .event-certification-logos-cell.odd { padding-right: 20px; }
+  .event-certification-logos-cell.even { }
+
+  #event-unique-features {  }
+  .event-unique-features-row { }
+  .event-unique-features-cell { color: #666; line-height: 1.3;  padding: 10px 0; border-bottom: 1px #bddbed solid; width: 100%; }
+  .event-unique-features-cell.odd {  }
+  .event-unique-features-cell.even {  }
+
+  #event-second-section-seriessummary { margin-bottom: 40px; }
+  h3#event-second-section-seriessummary-header { display: inline-block; margin-right: 7px; }
+  #event-second-section-seriessummary .view-previous, #event-second-section-seriessummary .view-future { color: #679ec0; cursor: pointer; }
+  .view-grid-table { display: table; width: 100%; max-width: 550px; }
+  .view-grid-table-row { display: table-row; }
+  .view-grid-table-cell { color: #666; line-height: 1.3; display: table-cell; vertical-align: middle; padding: 10px 0; border-bottom: 1px #bddbed solid; width: 50%;  }
+  .view-grid-table-cell .previous-event { color: #999; }
+  .view-grid-table-cell .future-event a { font-weight: normal; color: #777; }
+  .view-events-multiple-summary .view-grid-table-cell { width: 33%; }
+  #event-second-section-seriessummary .series-event h3, 
+  #event-second-section-seriessummary .series-event-photo { display: none; }
+  .series-event-odd {  }
+  .series-event-even {  }
+
+  h3.details-contact-info-heading { margin-bottom: .3em !important; }
+  .details-contact-info { margin-bottom: 1em; }
+  .details-contact-info img { max-height: 22px; max-width: 24px; margin-right: 5px; width: auto; height: auto; }
+  .details-contact-info span { display: inline-block; margin-right: 10px; }
+  .details-contact-info a { color: #fff; }
+  .details-contact-info-table { display: table; }
+  .details-contact-info-table-row { display: table-row; }
+  .details-contact-info-table-cell { display: table-cell; vertical-align: middle; height: 22px; }
+
+  #event-third-section-raceinfo { width: 100%;  } 
+  #event-third-section-photos { display: none; } 
+
+  .ui-widget, .ui-widget .ui-widget { font-size: 1em; }
+  .ui-widget-content { border: none; padding: 0; background: #fff; color: #222; }
+  .ui-widget-header { border: none; border-bottom: 5px #003557 solid; background: #fff; padding: 0 !important; }
+  .ui-widget-header .ui-state-default { border: none; margin: 0 4px 0 0 !important; padding: 0 !important; background: #fff; }
+  .ui-widget-header .ui-state-default a { padding: 3px 10px !important; margin: 0 !important; background: #bddbed; color: #003557; font-weight: bold; text-transform: uppercase; }
+  .ui-widget-header .ui-state-default.ui-tabs-selected { background: #003557; margin-bottom: 0; padding-bottom: 5px !important; }
+  .ui-widget-header .ui-state-default.ui-tabs-selected a { background: #003557; margin-bottom: 0; color: #fff; }
+  .ui-tabs .ui-tabs-panel { padding: 1em 0; }
+
+  /* Result listing in events page */
+  .view-display-id-eventlisting { border: 12px #fff solid; position: relative; /* padding-bottom: 370px; */ background: #003357 url(http://www.srichinmoyraces.org/sites/all/themes/races/images/results-graphic.jpg) bottom right no-repeat; box-sizing: border-box; margin-bottom: 30px !important; }
+  .view-display-id-eventlisting .view-header { background: #fff; width: 100%; margin-bottom: 0; border-bottom: 1px #dedede solid; }
+  .view-display-id-eventlisting .view-header h2 { text-transform: uppercase; margin: 0 4%; padding : 0 2% 40px 0; }
+  .view-display-id-eventlisting .view-content {  background: #fff;  width: 100%; float: left; }
+  .view-display-id-eventlisting .view-content .content-feather { background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/resultscroll-vertical-gradient.png) bottom left repeat-x scroll; position: absolute; bottom: 0; left: 0; height: 100px; width: 100%; z-index: 35;}
+  #main-wrapper .view-display-id-eventlisting .view-content .event-result-list > ul.slides { max-width: 600px; }
+  #main-wrapper .view-display-id-eventlisting .view-content .event-result-list > ul.slides > li { overflow-y: scroll; max-height: 450px; padding-bottom: 60px; }
+  .view-display-id-eventlisting .view-content .event-single-result-listing { display: none; }
+  .view-display-id-eventlisting .more-link { position: absolute; top: 34px; right: 2%; }
+  .view-display-id-eventlisting .more-link a { background-color: #bddbed; color: #003557 !important; line-height: 1.2; padding: 4px 6px; border-radius: 4px; }   
+
+  #content .view-display-id-eventlisting article .page-body, #content .view-display-id-eventlisting article .page-header { margin: 0; width: 100%; }
+  #content .view-display-id-eventlisting article .page-header h2.listing-page-title { font-size: 1.3em !important; padding: .5em 0 .2em 0; } 
+
+  /* For mobile event 'previous results' navigation, only display prev/next' links */
+  .view-display-id-eventlisting .event-result-list > .resultslider-direction-nav { height: 28px; border-radius: 4px; padding-top: 2px; top: 20px; left: 2%; position: absolute; list-style: none; }
+  .view-display-id-eventlisting .event-result-list > .resultslider-direction-nav > li { display: block; width: auto; margin-right: 17px; float: left; }
+  .resultslider-direction-nav .firstActive, .resultslider-direction-nav .lastActive { display: none; }
+  .view-display-id-eventlisting .event-result-list > .resultslider-control-nav { display: none; }
+
+
+  h3.ui-accordion-header { padding: 3px 10px !important; margin: 0 0 4px 0 !important; background: #bddbed; color: #003557; font-weight: bold; text-transform: uppercase; }
+
+  #event-fourth-section a { font-weight: normal; }
+
+  #event-fourth-section .shadow { padding: 20px 5% 40px 5%; }
+
+  #event-fourth-section-about { margin-bottom: 20px; }
+  #event-fourth-section-about > a { display: block; width: 100%; padding: 0; margin-bottom: 12px; background: #204c7d; color: #fff; }
+  .event-fourth-section-organisers-box.even { }
+  .event-fourth-section-organisers-box img { float: left; margin-right: 3%; width: 35%; height: auto; }
+  .event-fourth-section-organisers-box .organisers-text { float: left; width: 52%; margin: 0 3%; }
+  .event-fourth-section-organisers-box h3 { color: #fff; }
+
+  #event-fourth-section-eventlisting .view { margin-bottom: 30px; }
+
+  #event-series-section h2 { margin: 0 10px 0 5%; padding: 30px 10 15px 0; display: inline-block; }
+  #event-series-section .series-full-view-previous { color: #679ec0; cursor: pointer; }
+  #event-series-section .field-collection-container { display: table; width: 100%; padding: 0; margin: 0;  }
+  #event-series-section .series-event { display: table-row;  }
+  #event-series-section .series-event-details { display: table-cell; width: 65%; padding: 20px 5%; border-top: 1px #bddbed solid; vertical-align: middle; box-sizing: border-box;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+  #event-series-section .series-event-details h3 { text-transform: none; margin-top: 0; }
+  #event-series-section .series-event-photo { display: table-cell; width: 35%;  vertical-align: middle; padding: 20px 0; border-top: 1px #dedede solid; }
+  #event-series-section .series-event-photo img { border: 12px #fff solid; width: 100%; height: auto; box-sizing: border-box;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+
+
+  /************************************/
+  /*  Previous Results page for event */
+  /************************************/
+  .page-node-previous-results h1.title { display: none; padding: 0; margin: 0 !important;}
+  .view-results-single-event.view-display-id-page { min-height: 400px; }
+  .view-results-single-event.view-display-id-page .views-row .views-field-field-past-event-date { width: 92%; padding: 10px 4%;}
+
+  .view-results-single-event.view-display-id-page .view-header { position: relative; z-index: 20; margin-top: -20px; background-color: #66b6e7; margin-bottom: 20px; padding: 20px 4% 40px 4%; box-shadow: 0 0 5px rgba(91, 131, 158, .85); height: 60px; }
+  .view-results-single-event.view-display-id-page .view-header h3 { font-weight: bold; text-transform: uppercase; font-size: 1em; margin: 0; }
+  .view-results-single-event.view-display-id-page .view-header #result-article-and-image { position: relative; }
+  .view-results-single-event.view-display-id-page .view-header h1 { margin: 0; font-size: 1.6em; width: auto;}
+  
+  .view-results-single-event.view-display-id-page .view-header img { display: none; }
+  .view-results-single-event.view-display-id-page .event-previous-results-info { margin-right: 0; }
+
+  .view-results-single-event.view-display-id-page .view-header .button { position: absolute; bottom: 15px; left: 4%; }
+  .view-results-single-event.view-display-id-page .total-results { position: absolute; right: 4%; bottom: 61px; color: #fff; z-index: 25; }
+  /*.view-results-single-event.view-display-id-page .total-results:after { content: ' »'; } */
+  .view-results-single-event.view-display-id-page .view-display-id-jumptoarticle { display: none; } 
+  .view-results-single-event.view-display-id-page .view-display-id-jump_menu { position: absolute; right: 4%; margin-top: 0; bottom: 17px; color: #fff; z-index: 12; }
+
+  .view-results-single-event.view-display-id-page > .view-content { width: 100%; margin: 20px 0 0 0; padding: 0; }
+  .view-results-single-event.view-display-id-page > .view-content > h3 { margin: 0 0 .3em 0; font-size: 2.5em; font-weight: bold; }
+    .view-results-single-event.view-display-id-page > .view-content > .views-row { margin-bottom: 30px; }
+  .view-results-single-event.view-display-id-page > .view-content article { background: #fff; padding-bottom: 30px;  }
+  .view-results-single-event.view-display-id-page > .view-content article.node-book {  background: #f2f2f2; background: linear-gradient(to bottom, #f2f2f2 0%, #d1d1d1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
+  .view-results-single-event.view-display-id-page .views-row .views-field-field-past-event-date { display: block; margin: 0; background-color: #e6e6e6; }
+  .view-results-single-event.view-display-id-page .views-row main .section { width: 100%; }
+  img.file-icon { width: auto !important;}
+
+  .result-images { margin-bottom: 15px; }
+  .result-link-section { padding: 10px 15px; width: 40%; float: left; margin-right: 3%; margin-bottom: 15px; border: 1px #dedede solid;  }
+  .result-link-section .result-filewrapper { margin: 2px 0 10px 0; }
+  .result-link-section .single-filewrapper { margin-bottom: 2px; }
+  .result-link-section .single-filewrapper .single-filesize { font-size: .75em; } 
+
+  /*********************************************************/
+  /* Views page displays (previous results, term listings) */
+  /*********************************************************/
+
+  .view-display-id-page .views-row main .section p, .view-display-id-page .views-row main .section ul, 
+  .view-display-id-page .views-row main .section h1, .view-display-id-page .views-row main .section h2,
+  .view-display-id-page .views-row main .section h3, .view-display-id-page .views-row main .section h4 { max-width: 550px; }
+  .view-display-id-page .views-row main .section h1, .view-display-id-page .views-row main .section h2,
+  .view-display-id-page .views-row main .section h3, .view-display-id-page .views-row main .section h4 { font-size: 1.1em; font-weight: bold;  }
+
+  .view-display-id-page .views-row main .section h1 { font-size: 1.4em !important; text-transform: uppercase; }
+
+  /****************/
+  /* Display page */
+  /****************/
+
+  #display-page-wrapper .display-single-text { width: 90%; padding: 15px 5%; }
+  #display-page-wrapper .display-single-image { width: 100%; box-sizing: border-box;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; padding: 0 12px 12px 12px; }
+
+  #display-page-wrapper .display-single-item.display-odd { background: #f7f7f7; background: linear-gradient(to right, #f7f7f7 0%, #e1e1e1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); }
+  #display-page-wrapper .display-single-item.display-even { color: #fff; background: #004b7a; position: relative; z-index: 11;}
+  .display-image-feather { display: none; }
+
+  #display-page-wrapper .display-single-text h1 { margin-top: 0; font-size: 1.8em; font-weight: bold; }
+
+  #display-page-wrapper .display-single-text p, 
+  #display-page-wrapper .display-single-text h1,
+  #display-page-wrapper .display-single-text h2 { max-width: 430px; }
+
+  #display-page-wrapper .display-single-image { position: relative;  }
+  #display-page-wrapper .display-odd .display-image-feather { height: 545px; position: absolute; width: 90px; z-index: 10; background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/image-gradient.png) }  
+
+  #display-page-wrapper .display-single-item.display-even .display-single-text p, 
+  #display-page-wrapper .display-single-item.display-even .display-single-text h1,
+  #display-page-wrapper .display-single-item.display-even .display-single-text h2 { color: #fff; }
+
+  #display-page-wrapper .display-single-image img { width: 100%; height: auto; box-sizing: border-box;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+
+  /* #display-page-wrapper > .clearfix:after { content: ''; } */
+ 
+
+  /**********************/
+  /*   Listings         */
+  /**********************/
+
+  .display-listing { padding-bottom: 30px; }
+  .display-listing span.ext { display: none;}
+  .display-listing, .display-playlist, .display-organisers { line-height: 1.4; }
+  .display-listing .section-opening, .display-playlist .section-opening { padding: 20px 4% 1em 4%; text-align: center; }
+  .display-listing .section-opening h2, .display-playlist .section-opening h2 { margin: 0; font-size: 2em;}
+
+  .domain-front .display-listing, .domain-not-front .display-listing.display-odd, .domain-not-front .display-playlist.display-odd { display: block; background: #7272f7; background: linear-gradient(to bottom, #f7f7f7 0%, #e1e1e1 100%); position: relative; z-index: 11; }
+  .domain-front .display-playlist, .domain-not-front .display-listing.display-even, .domain-not-front .display-playlist.display-even { display: block; color: #fff; background: #004b7a; position: relative; z-index: 11; }
+  .domain-front .display-playlist h2, .domain-not-front .display-listing.display-even h2, .domain-not-front .display-playlist.display-even h2 { color: #fff; }
+
+  .listing-item > div { background: #bddbed; box-shadow: 0 0 5px rgba(155,155,155,.7); }
+  .domain-not-front .display-even .listing-item > div { background: #f7f7f7; background: linear-gradient(to bottom, #f7f7f7 0%, #e1e1e1 100%); box-shadow: 0 0 5px rgba(155,155,155,.7); } 
+
+  .display-organisers { background: #004b7a; color: #fff;  }
+  .display-organisers h2 { color: #fff; }
+
+  .display-organisers .odd .event-fourth-section-organisers-box, 
+  .display-organisers .even .event-fourth-section-organisers-box { width: 100%; margin: 0; padding: 10px 0;  }
+  .display-organisers .event-fourth-section-organisers-box { background: #004b7a; }
+  .display-organisers a { color: #fff; }
+  .display-organisers .event-fourth-section-organisers-box h3 { font-size: 1.3em; text-transform: uppercase; margin-top: 0.5em; } 
+
+  /* 4 wide */ 
+  .node-type-displaypage .listing-event-title { display: none; } /* we display listing title only on event page */
+
+  .node-type-displaypage .view-display-id-block_table_fourwide > div { padding: 0 2% 20px 5%; width: 93%; } 
+  .view-display-id-block_table_fourwide { display: block; /* background: linear-gradient(to bottom, #f7f7f7 0%, #e1e1e1 100%); */ } 
+  .view-display-id-block_table_fourwide .listing-item { display: block; padding: 0 3%; width: 94%; margin-bottom: 20px; } 
+  .view-display-id-block_table_fourwide .listing-item > div { position: relative; }
+  .view-display-id-block_table_fourwide .listing-item-image { padding: 10px; }
+  .view-display-id-block_table_fourwide .listing-item img { width: 100%; height: auto; }
+  .view-display-id-block_table_fourwide .listing-item-text { width: 84%; margin: 0 8%; position: relative; font-weight: normal; padding-bottom: 25px; }
+  .view-display-id-block_table_fourwide .listing-item-text h3 { margin: .5em 0; color: #003557; }
+  .view-display-id-block_table_fourwide .listing-item-text p { line-height: 1.4; }
+  .view-display-id-block_table_fourwide .listing-item-datelocation { font-size: 1.2em; font-weight: bold; }
+  .view-display-id-block_table_fourwide a { color: #003557 !important; }
+  .view-display-id-block_table_fourwide .button { position: absolute; right: 0; bottom: 0;  }
+
+  /* 2 x 2 table */ 
+  .node-type-displaypage .view-display-id-block_table_twowide > div { padding: 0 2%; width: 96%; } 
+  .view-display-id-block_table_twowide .listing-item { padding: 5px 1%; width: 98%; margin-bottom: 0; display: table; }
+
+  .view-display-id-block_table_twowide .views-row-even.listing-item { margin-right: 0; }
+  .view-display-id-block_table_twowide .listing-item > div { display: table-row; }
+  .view-display-id-block_table_twowide .listing-item > div > a { display: block; background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/slide-right.png) no-repeat 97% center; background-size: 20px; padding-right: 35px; }
+  .view-display-id-block_table_twowide .listing-item-image { display: table-cell; vertical-align: middle;}
+  .view-display-id-block_table_twowide .listing-item-image img { max-width: 135px; height: auto; max-height: 90px; }
+  .view-display-id-block_table_twowide .listing-item-text { display: table-cell; vertical-align: middle; color: #333; padding: 0 0 0 20px; }
+  .view-display-id-block_table_twowide .listing-item-text h3 { margin-bottom: .2em; color: #333;}
+  .view-display-id-block_table_twowide .listing-item-text p { margin-bottom: 0; line-height: 1.25em;}
+  .view-display-id-block_table_twowide .listing-item-datelocation { font-size: 1.2em; font-weight: bold; }
+  .view-display-id-block_table_twowide a { color: #333; font-weight: normal; } 
+  .view-display-id-block_table_twowide a.more-link { font-weight: bold; }
+  .view-display-id-block_table_twowide .button { display: none; }
+
+
+  /**********************/
+  /*    Front page       */
+  /**********************/
+  
+  .domain-front .display-page-section { margin-top: 2em !important; }
+
+  #front-slideshow { margin: 0; padding: 0; position: relative; background-color: #66b6e7; }
+  #front-slideshow ul.slides { display: inline-block; max-width: 100% !important; list-style: none; margin: 0; padding: 0; }
+  #front-slideshow ul.slides > li { display: none; -webkit-backface-visibility: hidden; }
+  #front-slideshow .front-slide img { width: 100%; height: auto; display: block; }
+  #front-slideshow .front-slide .section { position: relative; }
+  #front-slideshow .front-slide-box { background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/homepage-slide-bg.png); padding: 15px 40px 10px 40px; height: 120px; }
+  #front-slideshow .front-slide-box h3 { font-size: 1.2em; text-transform: uppercase; margin: 0 0 .3em 0; color: #fff; }
+  #front-slideshow .front-slide-box #event-date-location { margin-bottom: 1em; font-size: 1.1em; display: table; width: 100%; }
+  #front-slideshow .front-slide-box #event-date-location > div { display: table-row; width: 100%; }
+  #front-slideshow .front-slide-box #event-date-location .date-display-single, .front-slide-box #event-date-location .date-display-combination { display: table-cell; vertical-align: top;}
+  #front-slideshow .front-slide-box #event-date-location .location { display: table-cell; vertical-align: top; text-align: right; padding-left: 20px;}
+  #front-slideshow .front-slide-box p { margin-bottom: 1em; max-width: 470px; }
+  #front-slideshow .front-slide-box p a { color: #fff; display: inline-block; }
+
+  /* FlexSlider Necessary Styles */
+  .flex-pauseplay span {text-transform: capitalize;}
+  .slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+  html[xmlns] .slides {display: block;}
+  * html .slides {height: 1%;}
+  .no-js .slides > li:first-child {display: block;}
+
+  /* Direction Nav */
+
+  ul.flex-direction-nav { margin-left: 0 !important; padding-left: 0 !important; position: absolute; list-style: none; top: 40px; width: 100%; max-width: none !important; }
+  ul.flex-direction-nav a  { text-decoration:none; font-size: 0pt; display: block; width: 20px; height: 15px; margin: 0; position: absolute; z-index: 30; cursor: pointer; color: rgba(255,255,255,0.8); /* text-shadow: 1px 1px 0 rgba(255,255,255,0.3); */ }
+  .flexslider:hover .flex-prev { opacity: 0.7; }
+  .flexslider:hover .flex-next { opacity: 0.7;  }
+  .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+  .flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+  ul.flex-direction-nav a.flex-prev { left: 10px; width: 25px; height: 25px; background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/slide-left.png) 0 0 no-repeat; background-size: contain; text-align: -9999px; display: inline-block; }
+  ul.flex-direction-nav a.flex-next { margin-top: -6px; right: 10px; width: 25px; height: 25px; background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/slide-right.png) 0 0 no-repeat; background-size: contain; text-align: -9999px; display: inline-block; } 
+
+  /* Control Nav */
+  .flex-control-nav { display: none; }  
+
+  /* Opening double box */
+  #front-opening-box { position: relative; z-index: 35; }
+  #front-opening-box.section { width: 100%; margin: 0;}
+  #front-opening-box .field-collection-view { background: #f7f7f7; background: linear-gradient(to bottom, #f7f7f7 0%, #e1e1e1 100%); width: 100%; padding: 0 0 30px 0; margin: 0; border-bottom: 0; vertical-align: top; }
+
+  #front-opening-box .field-collection-view h2 { font-size: 2em; letter-spacing: .04em; margin: 5px 10% 0 0; padding: 10px 0 10px 8%; border-bottom: 6px #72bbe8 solid; } 
+  #front-opening-box .field-collection-view .view { padding: 10px 0 10px 4%; display: inline-block; min-width: 65%; }
+  #front-opening-box .field-collection-view .view a { display: block; color: #333; padding: 10px 4%; width: 92%; line-height: 1.3; }
+  #front-opening-box .field-collection-view .view a:hover { background: #004b7a; color: #fff; }
+
+  #front-opening-box .field-collection-view .view a strong { font-size: 1.2em; }
+  #front-opening-box .field-collection-view .view-content > div { margin-bottom: 0; line-height: 1.4; }
+
+  #front-opening-box .field-collection-view-final { color: #fff; background: #004b7a; }
+  #front-opening-box .field-collection-view-final h2 { color: #fff;  }
+  #front-opening-box .field-collection-view-final .view a { color: #fff; }
+  #front-opening-box .field-collection-view-final .view a:hover { background: #f7f7f7; color: #333; }
+
+  #front-opening-box .field-collection-view .view a > div { margin-right: 90px; display: inline-block; width: auto; max-width: 90%; }
+  #front-opening-box .field-collection-view .view a { background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/right-arrow-lightbg.png) no-repeat 97% 50%; margin-right: 4%; max-width: 89%; }
+  #front-opening-box .field-collection-view-final .view a, 
+  #front-opening-box .field-collection-view .view a:hover { background: #004b7a url(http://www.srichinmoyraces.org/sites/all/themes/races/images/right-arrow-darkbg.png) no-repeat 97% 50%; margin-right: 4%; max-width: 89%; }
+  #front-opening-box .field-collection-view-final .view a:hover {  background: #f7f7f7 url(http://www.srichinmoyraces.org/sites/all/themes/races/images/right-arrow-lightbg.png) no-repeat 97% 50%; max-width: 89%; margin-right: 4%; }
+
+  #front-opening-box .field-collection-view .more-link { width: 96%; color: #333; float: right; padding-right: 6%; font-size: 1.2em; font-weight: bold;  margin: 15px 0 25px 0;}
+  #front-opening-box .field-collection-view-final .more-link { color: #fff;  }
+
+  #front-opening-box .field-collection-view .view-footer .view { padding: 0; }
+
+  #front-slideshow-wrapper > .clearfix:after , #front-opening-box .clearfix:after { content: ''; }
+
+
+  /********************************************************/
+  /*  Main Event (/events) and Result (/results) listings */
+  /********************************************************/
+
+  .page-listing { background: #f7f7f7; background: linear-gradient(to bottom, #f7f7f7 0%, #e1e1e1 100%); margin-top: 20px; min-height: 350px; }
+  .page-listing h1 { font-size: 2.5em; text-transform: capitalize; } 
+  .page-events #page-title, .page-results #page-title { display: none; }
+  .page-events #main-wrapper, .page-results #main-wrapper { padding-top: 80px; }
+  
+  .page-listing .page-listing-below { display: table; min-height: 70px; width: 100%;}
+  .page-listing .page-listing-below > div { display: table-row; }
+  .page-listing .page-listing-below > div > div { display: table-cell; vertical-align: middle; padding: 10px 0; color: #333; }
+  .page-listing div.page-listing-description { padding-left: 5% !important; padding-right: 5% !important; line-height: 1.35; }
+  .page-listing .page-listing-datelocation { display: block; font-weight: bold; font-size: 1.1em; }
+  .page-listing .page-listing-button { text-align: right; }
+  .page-listing .page-listing-button .button { display: inline-block; margin: 0 20px; min-width: 57px; }
+
+  /* Events */
+  .page-events #page-title { display: none; }
+
+  #event-view-header { margin-bottom: 10px; }
+  #event-view-header a.button { background-color: #b2d5f1; color: #003557; margin-right: 20px; }
+
+  .page-events .view-city-list-events { padding: 0 0 15px 0 !important; }
+  .page-events .view-city-list-events .view-content div { display: inline; }
+  .page-events .view-city-list-events .view-content div a { margin-right: 20px; }
+
+  .page-events #main-wrapper .view, #event-view-header { padding: 10px 5% 0 5%; width: 90%; }
+  .page-events #main-wrapper .view > .view-header { text-align: center; margin-bottom: 25px; } 
+  .page-events #main-wrapper .view > .view-header h2 { margin-bottom: .2em; font-size: 1.8em; }
+  .page-events #main-wrapper .view > .view-header p { margin: 0 auto; }
+
+  #event-view-listing-title { width: 100%; font-weight: bold; }
+  ul#event-view-listing { margin: 0 0 10px 0; padding: 0 0 10px 0; width: 100%; max-width: 100%; border-bottom: 1px #e1e1e1 solid;}
+  #event-view-listing li { list-style: none; display: inline-block; margin: 0 20px 0 0; }
+
+  .page-events #main-wrapper .views-row  img { width: 100%; height: auto;}
+  .page-events #main-wrapper .views-row { width: 100%; margin-right: 6%; margin-bottom: 25px; float: left; box-shadow: 0 0 5px rgba(155,155,155,.7); background: #bddbed; }
+
+  .page-events #main-wrapper .event-view-even { color: #fff; background: #004b7a; }
+  .page-events #main-wrapper .event-view-even h2 { color: #fff; }
+  .page-events #main-wrapper .event-view-even .views-row { background: #f7f7f7; background: linear-gradient(to right, #f7f7f7 0%, #e1e1e1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0) !important; box-shadow: none; }
+
+
+  /* Results */
+  #result-view.section { width: 100%; margin: 0; }
+  .page-results h3 { width: 100%; }
+  #result-view { padding: 20px 0 50px 0;}
+  #result-header { position: fixed; left: 0; top: 82px; height: 20px; margin-left: 0 !important; padding: 5px 4% 10px 4%; display: block; background: #66b6e7; box-shadow: 0 0 5px rgba(91, 131, 158, .85);}
+  #result-header h1 { display: none; }
+  #result-header select { margin-left: 10px; }
+  #result-header .view { margin: 0 !important; display: inline-block; }
+  #result-header .view-content > div { display: inline-block; margin-right: 20px; }
+  #result-header .view-content > div:first-child { margin-right: 9px; }
+  #result-header .view-content > div:first-child a { font-size: 1.35em; } 
+
+  #result-view h1 { margin-left: 2%; margin-bottom: .3em; }
+  #result-main { width: 96%; margin: 45px 2% 0 2%; }
+  #result-main .view-content { display: inline-block; width: auto; }
+
+  .single-result { background-color: #bddbed; width: 100%; margin-bottom: 5px; }
+  .single-result-results { min-height: 80px; }
+  .single-result-book { background-color: #ddd; border: 1px #003357 solid;  position: relative; padding: 13px 0 0 0; box-sizing: border-box; }
+  .single-result-term { font-size: .85em; background-color: #003357; position: absolute; top: 0; left: 0; padding: 0px 7px 1px 7px; border-radius: 0 0 2px 0;}
+  .single-result-term a { color: #fff; }
+  .single-result-table { width: 100%; position: relative; }
+  .single-result-table > div { } 
+  .single-result-text { display: block; float: left; padding: 10px 110px 10px 20px ; } 
+  .single-result-text  a { color: #333; }
+  .single-result-datelocation { font-size: 1.1em; font-weight: bold; }
+  .single-result-more { position: absolute; top: 10px; right: 10px; } 
+  .single-result-more a.more-main { display: inline-block; white-space: nowrap; }
+  .single-result-download { position: absolute; top: 45px; right: 60px; }
+  .single-result-gallery { position: absolute; top: 45px; right: 10px; }
+  .single-result-cell { vertical-align: middle;}
+  .single-result-cell img { height: 25px; width: auto; margin: 0 10px; }
+
+  .single-result-opened-files { display: none; padding-bottom: 5px; }
+  .single-result-opened-files .file { display: inline-block; padding: 10px 20px; }
+  .single-result-opened-files .file a { font-size: .9em; font-weight: bold; }
+
+  
+  /* Manage Unsorted Content */
+  .view-id-manage_unsorted_content .view-content { width: 100%; margin: 0; padding: 0;}
+  .view-id-manage_unsorted_content table td { padding-left: 1em; padding-right: 1em; }
+  .view-id-manage_unsorted_content table td.views-field-title { font-weight: bold; font-size: 1.1em; max-width: 130px; }
+  .view-id-manage_unsorted_content table td.views-field-body { font-size: .8em; max-width: 250px; overflow: hidden; }
+  .view-id-manage_unsorted_content table td.views-field-field-result-event-page-editable,
+  .view-id-manage_unsorted_content table td.views-field-field-past-event-date-editable { background-color: #3cc; }
+  .view-id-manage_unsorted_content table td.views-field-field-article-tags-editable,
+  .view-id-manage_unsorted_content table td.views-field-field-article-event-page-editable { background-color: #c3c; }
+  .view-id-manage_unsorted_content table td.views-field-field-convert-result-editable { font-size: .7em; }
+
+  .view-id-manage_unsorted_content table td select { width: 75px; }
+  .view-id-manage_unsorted_content table td.views-field-field-article-tags-editable table td select { min-width: 110px; }
+
+  .view-id-manage_unsorted_content table td.views-field-php li { font-size: .9em; margin-bottom: 10px; width: 180px }
+
+  /* 2014 import manage */
+
+  .page-content-migrate #main-wrapper { padding-left: 40px; padding-right: 40px; }
+  .page-content-migrate #main-wrapper h1#page-title { display: none; }
+
+  /* Category manage */
+  .view-manage-categories-in-domain .view-content { width: 100%; margin: 0; padding: 0;}
+  .view-manage-categories-in-domain td { padding: 5px 15px; }
+
+  /*********************/
+  /*  Footer           */
+  /*********************/
+  #footer { color: #fff; margin-top: 50px; background: #004b7a; padding-bottom: 30px; line-height: 1.4; }
+  #footer a, #footer p, #footer h4 { color: #fff; }
+  #footer .section { background: #00375a; padding: 5px 4% 20px 4%; width: 84%; }
+
+  #footer h4 { font-size: 1.4em; margin-bottom: .2em; }
+  #footer ul.menu { margin-bottom: 1em; }
+  #footer ul.menu li { margin-left: 0; }
+
+  #footer-country-links ul.menu {  width: 100%; }
+  #footer-country-links ul.menu li.expanded {  float: left; width: 30%; display: block; }
+  #footer-country-links ul.menu li.expanded > a { text-transform: uppercase; font-weight: bold; }
+
+  #footer-contact-info { }
+
+  #footer-copyright { width: 92%; margin: 0 auto; padding: 20px 2%; max-width: 950px; font-size: .95em; }
+  #footer-copyright img { border-width:0; float: left; margin-right: 10px; }
+  #footer-copyright a { color: #ccc; }
+
+
+  /***************/
+  /*   Search    */
+  /***************/
+  ol.search-results {  padding-left: 0; }    
+  ol.search-results li { border-top: 1px #dedede solid; }
+  ol.search-results li h3.title a { text-decoration: none; }
+  ol.search-results .search-snippet-info { padding-left: 0; }
+
+
+  /*******************/
+  /*   User profile  */
+  /********************/
+  .page-user h1#page-title { display: none; }
+  #user-profile { margin-top: 40px; background: #f2f2f2; background: linear-gradient(to bottom, #f2f2f2 0%, #d1d1d1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0) }
+  #user-profile h3 { font-size: 1.3em; text-transform: uppercase; }
+  #user-profile .view h3 { font-size: 1.1em; text-transform: none; font-style: italic;}
+  #user-profile .item-list dd { -webkit-margin-start: 0; }
+  #user-profile .item-list ul { margin: 0; padding: 0; }
+  #user-profile .item-list ul li { list-style: none; margin: 0 0 3px 0; }
+  #profile-left { width: 38%; padding: 30px 4%; float: left; }
+  #profile-right { width: 46%; padding: 30px 4%; float: left; }
+
+  #profile-right table caption { padding: 3px 0; font-weight: bold; font-style: italic; }
+  #profile-right tr { border-bottom: 1px #ccc solid; }
+  #profile-right tr td { padding: 2px 10px; }
+
+  #profile-edit { margin-bottom: 30px; }
+  #profile-edit img { float: right; margin: 0 0 5px 20px; }
+
+  
+  /* Float classes */
+  img.align-left, img.left, figure.left { float:left; margin: 0 15px 5px 0; }
+  img.align-right, img.right, figure.right { float:right; margin: 0 0 5px 15px; }
+  img.align-left, img.align-right, img.left, img.right, figure.left, figure.right { max-width: 50%; height: auto; }
+  figcaption { text-align: center; font-style: italic; color: inherit; padding: 0 4%; margin-top: 7px; line-height: 1.3; }
+
+  /* Top toolbar adjustments */
+  body.tab-toolbar ul.tabs.primary {  padding: 10px 30px; }
+  body.domain-admin-menu-combined ul#domain-admin-menu { position: fixed; }
+  body.tab-toolbar.domain-admin-menu ul.tabs.primary { top: 30px !important; }
+  body.tab-toolbar.domain-admin-menu-combined ul.tabs.primary { top: 50px !important; }
+  body.domain-admin-menu ul#domain-admin-menu { position: fixed; }
+  body.tab-toolbar.domain-admin-menu-combined { margin-top: 85px !important; }
+  body.tab-toolbar.domain-admin-menu { margin-top: 65px !important; }
+
+  /* Vimeo playlists */
+  div[id*="player-"] { background-color: #003557 !important; }
+  div[id*="player-"] ul { font-size: 1.1em; max-width: none; margin-left: 0;}
+  div[id*="player-"] ul li a { font-weight: normal !important; }
+  div[id*="player-"] ul li .byline { display: none !important; }
+  div[id*="player-"] ul li img { width: auto; }
+
+  /* CKEditor styles */
+  body.cke_editable { background-color: #fff; }
+  .cke_widget_wrapper.right { float:right; margin: 0 0 5px 15px; }
+  .cke_widget_wrapper.left { float:left; margin: 0 15px 5px 0; }
+  .cke_widget_wrapper.left, .cke_widget_wrapper.right { max-width: 50%; height: auto; }
+  .cke_widget_wrapper.left img, .cke_widget_wrapper.right img { height: auto !important;} 
+
+
+/***** Editing contextual links menu *****/
+
+article .contextual-links-wrapper { display: block; z-index: 39; }
+article a.contextual-links-trigger {
+  display: block;
+  width: 48px;
+  height: 39px;
+  text-align: -9999px;
+  color: #fff;
+  background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/edit-small.png) no-repeat;
+
+}
+
+article a.contextual-links-trigger:hover,
+article div.contextual-links-active a.contextual-links-trigger { background-position: 0px 0px;}
+article div.contextual-links-wrapper ul.contextual-links { top: 39px; }
+
+/*.node-type-event .node .contextual-links-wrapper,
+.node-type-results .node .contextual-links-wrapper
+.node-type-article .node .contextual-links-wrapper
+.node-type-displaypage .node .contextual-links-wrapper {
+  position: fixed;
+  top: 25px;
+  right: -5px;
+  display: block;
+}
+
+.node-type-event .node a.contextual-links-trigger,
+.node-type-results .node a.contextual-links-trigger,
+.node-type-article .node a.contextual-links-trigger,
+.node-type-displaypage .node a.contextual-links-trigger, {
+  display: block;
+  width: 64px;
+  height: 52px;
+  text-align: -9999px;
+  background: url(images/edit-single.png) no-repeat;
+}
+.node-type-event .node a.contextual-links-trigger:hover
+.node-type-results .node a.contextual-links-trigger:hover,
+.node-type-article .node a.contextual-links-trigger:hover,
+.node-type-displaypage .node a.contextual-links-trigger:hover
+.node-type-event .node div.contextual-links-active a.contextual-links-trigger,
+.node-type-results .node div.contextual-links-active a.contextual-links-trigger,
+.node-type-article .node div.contextual-links-active a.contextual-links-trigger,
+.node-type-displaypage .node div.contextual-links-active a.contextual-links-trigger { background-position: 0px 0px;}
+
+.node-type-event .node div.contextual-links-wrapper ul.contextual-links,
+.node-type-results .node div.contextual-links-wrapper ul.contextual-links,
+.node-type-article .node div.contextual-links-wrapper ul.contextual-links,
+.node-type-displaypage .node div.contextual-links-wrapper ul.contextual-links { top: 52px; } */
+
+
+
+
+/*************************/
+/*     Media queries     */
+/*************************/
+
+
+@media all and (min-width: 480px) {
+  
+  h1.title { font-size: 2.1em; margin: 0.3em 0 1em 0;  } 
+   
+  #content { width: 100%;}
+  
+  body.front .table-cell-display { width: 50%; float: left; }
+
+  .table-cell-display { padding-bottom: 10px; }
+
+  .page-events #main-wrapper .views-row { width: 46%; margin-right: 6%; margin-bottom: 25px; float: left; }
+  .page-events #main-wrapper .views-row-even { margin-right: 0 !important; }
+  .page-events .page-listing-button { display: none; }
+
+  #front-slideshow .front-slide-box { height: 80px; }
+  
+  #front-opening-box.section, #result-view.section, .view-results-single-event.view-display-id-page > .view-content { width: 92%; margin: 0 4%; }
+
+  .single-result-table, .single-result-more, .single-result-download, .single-result-gallery { position: static; top: auto; right: auto; }
+  .single-result-table { display: table; min-height: auto !important; }
+  .single-result-table > div { display: table-row; } 
+  .single-result-cell { display: table-cell; vertical-align: middle; width: auto; } 
+  .single-result-cell img { height: 30px; }
+  .single-result-text { padding-right: 20px; }
+  .single-result-more { text-align: right; padding-right: 20px; }
+  .single-result-download { width: 30px; padding-right: 20px; }
+  .single-result-gallery { width: 40px; padding-right: 20px; }
+
+  .view-display-id-block_table_fourwide .listing-item { display: block; float: left; padding: 0 3%; width: 44%; } 
+
+    
+}
+
+@media all and (max-width: 649px) {
+  #result-header { width: 92% !important; }
+}  
+
+@media all and (min-width: 650px) {
+  
+  #main-wrapper { padding-top: 56px; }
+
+  #header h1, #header h2 { max-width: 170px; border-bottom: 0; margin: 0; padding: 5px 0; }
+  #header #navigation { position: absolute; max-width: 63%; bottom: 5px; right: 0; }
+
+  .domain-ru-srichinmoyracesorg #header h1, 
+  .domain-ru-srichinmoyracesorg #header h2 { max-width: 230px; }
+
+  #header #navigation ul.menu li { font-size: 1.2em; margin-right: 15px; width: auto !important; }
+  #header #navigation ul.menu li.last { margin-right: 0; }
+  #header #navigation ul.menu li a { padding: 0 12px; }
+  #header #navigation ul.menu li a .homeimg { margin-bottom: -1px; max-width: 24px; max-height: 24px; }
+  #header #navigation ul.menu li.mobilelast { padding-top: 5px; }
+
+  #header form { position: absolute; right: 0; bottom: -30px; width: 150px; padding: 5px; }
+
+  .table-display { display: table; width: 100%; }
+  .table-row-display { display: table-row; }
+  .table-cell-display { display: table-cell; vertical-align: top; }
+  body.front .table-cell-display { width: auto; float: none; min-width: 303px; height: auto; }
+  
+  #event-second-section .section { display: table; }
+  #event-second-section .section > div { display: table-row; }
+  #event-second-section-introduction { width: 77%; padding: 20px 4% 12px 5%; display: table-cell; vertical-align: top; } 
+  #event-second-section-details { width: 23%; padding: 7px 3% 25px 3%; font-size: .9em; border: 12px #fff solid; display: table-cell; vertical-align: top; box-sizing: content-box; }
+
+  #event-fourth-section-about { margin-bottom: 40px; }
+  #event-fourth-section-about > a { width: 48%; padding: 0; margin-bottom: 0; float:left; }
+  #event-fourth-section-about a.odd { margin-right: 4%;  }
+
+  .view-display-id-block_table_twowide .listing-item { padding: 10px 1%; width: 47%; margin-right: 2%; margin-bottom: 5px; display: table; float: left; } 
+
+  .page-events .page-listing-button { display: block; }
+
+  #result-view h1 { margin-left: 4%; }
+  #result-main-wrapper { display: table; width: 100%; min-height: 420px; }
+  #result-main-wrapper > div { display: table-row;}
+  #result-main { width: 64%; padding: 0 4%; display: table-cell; /* Need to do it this way because of floating block */ }
+  #result-main .view-content { width: 100%; }
+  #result-side-bg { width: 28%; /* border: 12px #fff solid; */ background: #003357; display: table-cell; position: relative; }
+  #result-header {  top: 0; color: #fff; position: absolute; left: auto; margin: 0 !important;  padding: 30px 25px 300px 25px; height: auto; overflow: hidden; background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/results-graphic.jpg) bottom right no-repeat; box-shadow: none; }
+  #result-header a { color: #bddbed; font-weight: normal; font-size: 1em; }
+  .single-result-results { min-height: 0; }
+
+  #display-page-wrapper .display-single-item { display: table; width: 100%; padding: 0; margin: 0; overflow: hidden; }
+  #display-page-wrapper .display-single-item > div { display: table-row;  }
+  #display-page-wrapper .display-single-item.display-odd .display-single-text { display: table-cell; width: 55%; padding: 20px 5%; vertical-align: middle; box-sizing: border-box;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+  #display-page-wrapper .display-single-item.display-odd .display-single-image { display: table-cell; width: 45%;  padding: 0; vertical-align: top; box-sizing: content-box;  -moz-box-sizing: content-box; -webkit-box-sizing: content-box; }
+  #display-page-wrapper .display-single-item.display-even .display-single-text { display: table-cell; width: 45%; padding: 20px 5%;  vertical-align: middle; box-sizing: border-box;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+  #display-page-wrapper .display-single-item.display-even .display-single-image { display: table-cell; width: 55%; padding: 20px 20px 20px 0; vertical-align: middle; box-sizing: content-box;  -moz-box-sizing: content-box; -webkit-box-sizing: content-box;  }
+
+  .display-image-feather { display: block; }
+  #display-page-wrapper .display-single-text h1 { margin-top: 20px; font-size: 2em; }
+
+  #footer-contact-info { display: block; width: auto; margin-top: 60px; margin-left: 5%; }
+  #footer-contact-info div { display: table; width: 100%; }
+  #footer-contact-info div div { display: table-row; width: 100%;  }
+  #footer-contact-info h4 { display: table-cell; vertical-align: top; padding-right: 20px; width: 33%; text-align: right; }
+  #footer-contact-info span { display: table-cell; vertical-align: top; }
+
+}
+
+
+@media all and (min-width: 768px) {
+
+    body { font-size: 1.4em; font-size: 1.4rem; }
+
+    #main-wrapper { padding-top: 103px; }
+    .node-type-book #main-wrapper { padding-top: 153px; }
+    .page-events #main-wrapper { padding-top: 153px; }
+    .page-results #main-wrapper { padding-top: 123px; }
+
+    #header h1, #header h2 { max-width: 55%; padding: 8px 0; }
+    #header a#logo img { float: left; width: auto; height: auto; margin-right: 13px; }
+    #header form { display: block; position: absolute; bottom: 50px; right: 7px; width: 115px; } 
+
+    #header a#logo .site-name { width: 270px; float: left; font-size: 1.6em; }
+    #header #navigation ul.menu { font-size: 1.1em; }
+    #header #navigation ul.menu li.mobilelast { display: none; }
+
+    .domain-ru-srichinmoyracesorg #header a#logo .site-name { width: 340px; }
+    .domain-rs-srichinmoyracesorg #header a#logo .site-name { width: 200px; }
+
+    #header.header-small h1, #header.header-small h2 { padding: 5px 0;  }
+    #header.header-small a#logo img { width: 35px; height: 35px; margin-right: 7px;}
+    #header.header-small a#logo .site-name { width: 370px; font-size: 1em;}
+    #header.header-small #navigation { bottom: -2px; }
+    #header.header-small #navigation ul.menu { font-size: 1.1em; }
+    #header.header-small form { display: none; } 
+    #header.header-small #navigation ul.menu li.mobilelast { display: block; margin-left: 20px; }   
+
+    .term-page #page-sidebar { width: 30% !important; left: 0; position: absolute; background: transparent; margin: 0; padding: 0; box-shadow: none; }
+    #term-article-listing { width: 62%; padding-left: 38%; padding-top: 0; }
+    #term-article-listing main { margin-top: 0; margin-bottom: 35px;}
+    #term-article-listing article { padding-top: 25px 0 15px 0; }
+    .initial-teaser { height: 350px; } 
+
+    .term-page #page-sidebar .mobile-expand-link { display: none; }
+    #term-information h1, #term-information h2 { position: absolute; bottom: 10px; color: #fff; line-height: 1.2; width: 92%; padding: 5px 4%; background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/bluebg.png); font-size: 1.4em;  }
+    #page-sidebar img { display: block; float: none; width: 100%; }
+    #page-sidebar .view { float: none; width: 100%; display: block; }
+    /* #page-sidebar .views-exposed-form .views-exposed-widget .form-submit { margin-top: 1.25em; } */
+
+    #term-description { display: block; margin: .5em 0 0 0; }
+    #term-information > a { display: block; }
+
+    #front-slideshow .front-slide-box { position: absolute; left: 0; top: 0; z-index: 2; background: transparent url(http://www.srichinmoyraces.org/sites/all/themes/races/images/homepage-slide-bg.png); font-size: 1.05em; padding: 10px 3.5% 15px 3.5%; width: 30%; max-width: 260px; height: 155px; }
+
+    ul.flex-direction-nav { top: 135px; width: 34%; left: 4% !important; padding-left: 0 !important; max-width: 340px !important; }
+    ul.flex-direction-nav a.flex-prev { left: auto; right: 40px; position: absolute; }
+    ul.flex-direction-nav a.flex-next { margin-top: -7px !important; right: 10px; position: absolute; }
+
+    #front-opening-box { display: table; position: relative; z-index: 35; top: -25px; }
+    #front-opening-box > .field-collection-container { display: table-row; }
+    #front-opening-box .field-collection-view { display: table-cell; width: 50%; padding: 0 0 30px 0; margin: 0; border-bottom: 0; vertical-align: top; }
+
+    #front-opening-box .field-collection-view h2 { font-size: 2.3em; letter-spacing: .04em; margin: 5px 10% 0 0; padding: 10px 0 10px 10%; border-bottom: 6px #72bbe8 solid; } 
+    #front-opening-box .field-collection-view .view { padding: 10px 0 10px 8%; display: inline-block; min-width: 65%; } 
+    #front-opening-box .field-collection-view-final h2 { margin: 5px 0 0 10%; padding: 10px 10% 10px 0; } 
+
+    /* #front-opening-box .field-collection-view .more-link { float: left; padding-right: 12%; }
+    #front-opening-box .field-collection-view-final .more-link { float: right; padding-left: 6%; } */
+
+    .display-listing .section-opening { padding: 30px 10% 1.5em 10%; }
+    .display-playlist .section-opening { padding: 20px 10% 1.5em 10%; }
+    .display-listing .section-opening h2, .display-playlist .section-opening h2 { font-size: 2.5em; margin: 0; }
+
+    .display-organisers .odd .event-fourth-section-organisers-box, 
+    .display-organisers .even .event-fourth-section-organisers-box { width: 50%; margin: 0; padding: 0; float: left; }
+
+    .view-results-single-event.view-display-id-page .view-header { padding-top: 50px; height: 65px; }
+    .view-results-single-event.view-display-id-page .view-header .view-display-id-jump_menu { left: 170px; }
+    .view-results-single-event.view-display-id-page .view-header .total-results { left: 4%; top: 25px; }
+    .view-results-single-event.view-display-id-page .view-header img { display: block; height: 100px; width: auto; float: right; margin-left: 5%; margin-top: -20px;}
+
+    .view-display-id-block_table_twowide .listing-item > div > a { padding-right: 42px; }  
+
+    .node-type-event h2 { text-align: left; }  
+
+    #event-first-section-box h1 { text-align: left; margin-bottom: .1em; font-size: 2.5em;  }
+
+    #event-first-section-box #event-date-location { margin-bottom: 1em; font-size: 1.1em; display: table; width: 100%; }
+    #event-first-section-box #event-date-location > div { display: table-row; width: 100%; }
+    #event-first-section-box #event-date-location .event-date-display { background: transparent; margin-top: 0px;  padding-left: 0; display: table-cell; vertical-align: top;}
+    #event-first-section-box #event-date-location .location { background: transparent; display: table-cell; vertical-align: top; text-align: right; padding-left: 20px;}
+    ul#event-first-section-box-links li { text-align: left; width: auto; margin-right: 2em;  }
+    ul#event-first-section-box-links li a { padding: 0; }
+
+    #event-second-section-introduction { width: 67%; } 
+    #event-second-section-details { width: 33%; font-size: inherit; } 
+
+    #event-second-section-video { max-width: 100%; overflow: hidden; }
+
+    #event-second-section-entrylinks { display: table; }
+    #event-second-section-entrylinks > div { display: table-row; }
+    #event-second-section-entrylinks .entrylink-cell { display: table-cell; padding-right: 15px;  } 
+
+    #event-unique-features { display: table; margin-bottom: 40px; }
+    .event-unique-features-row { display: table-row; margin-bottom: 20px; }
+    .event-unique-features-cell { color: #666; line-height: 1.3;  display: table-cell; vertical-align: middle; padding: 10px 0; border-bottom: 1px #bddbed solid; width: 50%; }
+    .event-unique-features-cell.odd { padding-right: 20px; }
+    .event-unique-features-cell.even { padding-left: 20px; }
+
+    #event-second-section-belowintro { display: table; background: #c1dded; margin-top: 30px; }
+    #event-second-section-belowintro > div { display: table-row; }
+    #event-second-section-previous-results { display: table-cell; width: auto; } 
+    #event-second-section-newsletter { display: table-cell; width: 51%; border-left: 12px #fff solid; }
+
+    .view-display-id-eventlisting { background: #003357 url(http://www.srichinmoyraces.org/sites/all/themes/races/images/results-graphic.jpg) bottom right no-repeat; box-sizing: border-box;  }
+    .view-display-id-eventlisting .view-header, .view-display-id-eventlisting .view-content, .view-display-id-eventlisting .view-content .content-feather { width: 62%; padding: 0 3%; }
+    .view-display-id-eventlisting .view-header { border-bottom: none; }
+    .view-display-id-eventlisting .view-header h2 { text-transform: uppercase; margin: 0 2%; padding : 10px 0; border-bottom: 1px #ccc solid; }
+    .view-display-id-eventlisting .event-result-list > .resultslider-direction-nav { display: none; } 
+    .view-display-id-eventlisting .event-result-list > .resultslider-control-nav { display: block; position: absolute; bottom: auto; left: auto; top: -5px; right: 0; width: 32%; text-align: left; z-index: 35; list-style: none; }
+    .view-display-id-eventlisting .event-result-list > .resultslider-control-paging li { width: 90%; padding: 0 5%; }
+    .view-display-id-eventlisting .event-result-list > .resultslider-control-paging li a { display: block; padding: 10px 5%; font-size: .8em; cursor: pointer !important; width: 90%; font-weight: normal; color: #fff; line-height: 1.3;  }
+    .view-display-id-eventlisting .event-result-list > .resultslider-control-paging li a.resultslider-active { background: #004b7a !important;   }
+    .view-display-id-eventlisting .event-result-list > .resultslider-control-paging li a .event-single-result-title { color: #b2d5f1; font-size: 1.25em;  }  
+    .view-display-id-eventlisting .more-link { top: 15px; right: 36%; }  
+    .view-display-id-eventlisting .event-result-list .item-slider { padding-top: 10px; }
+    .view-display-id-eventlisting .event-result-list .item-slider ul.flex-direction-nav { bottom: 34px; }
+
+    #footer .section { padding: 40px 0; width: 92%; }
+    #footer .footer-col1 { min-height: 380px; width: 27%; padding: 0 5%; float: left; border-right: 1px #fff solid; box-sizing: border-box;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+    #footer .footer-col2 { min-height: 380px; width: 46%; padding: 0 7%; float: left; border-right: 1px #fff solid; box-sizing: border-box;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+    #footer .footer-col3 { min-height: 380px; width: 27%; padding: 0 5%; float: left; box-sizing: border-box;  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; } 
+    #footer-copyright p { padding-top: 10px; } 
+
+   .page-events #main-wrapper .event-view-odd .views-row { width: 30%; margin-right: 5%;  }
+   .page-events #main-wrapper .event-view-odd .views-row-even { margin-right: 5% !important; }
+   .page-events #main-wrapper .event-view-odd .views-row-3n { margin-right: 0 !important;}
+   .page-events #main-wrapper .event-view-odd .page-listing-below > div > div { display: block !important; }
+   .page-events #main-wrapper .event-view-odd .page-listing-button { padding: 0 0 5px 0;}
+   .page-events #main-wrapper .event-view-odd .page-listing-button .button { margin-right: 5px; }
+}  
+
+/* @media all and (max-width: 960px) {
+  .view-list-event-previous-results.view-display-id-page > .view-content > .views-row { min-width: 640px; max-width: 768px;  }
+  .view-list-event-previous-results.view-display-id-page .view-header { min-width: 706px; }
+  .section { min-width: 706px; }
+} */ 
+
+@media all and (min-width: 960px) {
+
+  .page-node-previous-results #main-wrapper { padding-top: 133px; }
+
+  .section, .view-display-id-page, #front-opening-box.section, #result-view.section, .view-results-single-event.view-display-id-page > .view-content { max-width: 1200px; margin: 0 auto; }
+
+  #header h1, #header h2 { max-width: 45% !important; }
+  #header #navigation { position: absolute; max-width: 45%; bottom: 0; right: 140px; }
+  #header #navigation ul.menu { font-size: 1.2em; }
+  #header #navigation ul.menu li { padding: 0 0 4px 0; }
+  #header #navigation ul.menu li.navtext a { display: inline; }
+  #header #navigation ul.menu li.navtext a:hover { background: #045d97; padding-top: 70px;} 
+  #header form { bottom: 8px; right: 0; padding: 0; margin: 0; } 
+
+  .navarea { width: 100%; height: 175px; border-bottom: 5px solid #66b6e7; overflow: hidden; background: #045d97; position: fixed; top: 98px; z-index: 49;}
+  .domain-admin-menu .navarea { top: 123px; }
+  .domain-admin-menu-combined .navarea { top: 148px; }
+  .tab-toolbar .navarea { top: 133px; }
+  .tab-toolbar.domain-admin-menu .navarea { top: 163px; }
+  .tab-toolbar.domain-admin-menu-combined .navarea { top: 183px; }
+
+  .navinnerarea { display: none; padding: 0;}
+  .navinnerarea .top-nav-col1 { width: 59%; margin-right: 6%; float: left; }
+  .navinnerarea .top-nav-col2 { width: 17%; margin-right: 1%; float: left; }
+  .navinnerarea .top-nav-col3 { width: 17%; float: left; }
+  .navinnerarea p, .navinnerarea a, .navinnerarea h1, .navinnerarea h2, .navinnerarea h3, .navinnerarea h4 { color: #fff; }
+  .navinnerarea h3 { font-size: 1em; margin: 0 0 .2em 0; }
+
+  .navinnerarea .top-nav-col1 img { float: left; margin-right: 25px; max-width: 385px; height: auto; }
+  .navinnerarea .top-nav-col1 .top-menu-description { padding-top: 20px; }
+  .navinnerarea .top-nav-col1 .top-menu-description .button { margin-top: 20px; }
+  .navinnerarea h4 { font-weight: bold; margin-bottom: 0.1em; font-size: 1.1em; }  
+
+  #header.header-small form { bottom: 3px; display: block; } 
+  #header.header-small #navigation ul.menu li.mobilelast { display: none; } 
+
+  #event-first-section-box { position: absolute; left: 0; top: 0; width: auto; /* max-width: 60%; */ padding: 10px 40px 20px 40px; }
+  .details-contact-info-table { float: left; margin-right: 15px; }
+
+  #event-first-section-box h1 { max-width: 650px; }
+
+  #event-third-section .section { display: table; }
+  #event-third-section .section > div { display: table-row; }
+  #event-third-section-raceinfo { width: 67%; padding: 20px 4% 0 5%; display: table-cell; vertical-align: top; } 
+  #event-third-section-photos { background: #bddbed; width: 33%; padding: 12px 12px 0 12px; display: table-cell; vertical-align: top; } 
+  #event-third-section-photos img { margin-bottom: 12px; width: 100%; height: auto;}
+  #event-third-section-photos label { color: #bddbed; } 
+
+  .view-results-single-event.view-display-id-page > .view-content { min-width: none !important; }
+  .view-results-single-event.view-display-id-page .views-row {  }
+  .view-results-single-event.view-display-id-page { position: relative; }
+  .view-results-single-event.view-display-id-page .view-content { float: right; width: 58%; }
+  .view-results-single-event.view-display-id-page .view-header { min-width: none; position: absolute; box-shadow:none; height: auto; left: 0; width: 38%; border-bottom: 70px #004b7a solid; padding: 0 0 10px 0; margin-top: 0; background: #003557; color: #fff; }
+  .view-results-single-event.view-display-id-page .view-header .view-content { width: 100%; }
+  .view-results-single-event.view-display-id-page .view-header .views-row { width: 100%; background-color: transparent; padding-bottom: 0; margin-bottom: 0;  }
+  .view-results-single-event.view-display-id-page .view-header .views-row > div { max-width: none; float: none; margin: 0;}
+
+  .view-results-single-event.view-display-id-page .view-header h3 { font-weight: bold; text-transform: uppercase; font-size: 1em; width: 100%; margin: 0 !important; width: 92%; padding: 7px 4%; color: #bddbed; display: block; }
+  .view-results-single-event.view-display-id-page .view-header #result-title-and-image { position: relative; }
+  .view-results-single-event.view-display-id-page .view-header h1 { position: absolute; top: 10px; padding: 4px 20px 4px 4%; margin: 0; margin: 0; font-size: 1.3em; background: url(http://www.srichinmoyraces.org/sites/all/themes/races/images/greybg.png); width: auto; min-width: 100px; }
+
+  .view-results-single-event.view-display-id-page .view-header .views-row img { margin-left: 0; margin-top: 0; margin-bottom: 10px; position: static; float: none; width: 100%; height: auto; max-width: none;}
+  .view-results-single-event.view-display-id-page .view-header .button { left: auto; right: 4%; bottom: 10px; }
+  .view-results-single-event.view-display-id-page .view-display-id-jump_menu { position: static; padding-left: 4%; }
+
+  .view-results-single-event.view-display-id-page .total-results { color: #fff; font-size: .8em; position: absolute; top: auto !important; bottom: -35px; }
+  .view-results-single-event.view-display-id-page .view-display-id-jumptoarticle { display: block; position: absolute; bottom: -55px; padding-left: 4%; }
+  .view-results-single-event.view-display-id-page .view-display-id-jumptoarticle select { width: 80%; }
+  .view-results-single-event.view-display-id-page .view input[type="submit"] { display: none; }
+
+  .display-organisers .event-fourth-section-organisers-box h3 { margin-top: 1.5em; }
+
+  #front-slideshow .front-slide-box { padding-top: 20px; height: 140px; }
+  ul.flex-direction-nav { top: 130px; width: 32%; }
+
+  .view-display-id-block_table_fourwide .display-table-listing {  display: table; }
+  .view-display-id-block_table_fourwide .display-table-listing > div { display: table-row; } 
+  .view-display-id-block_table_fourwide .listing-item { display: table-cell; padding-right: 3%; padding-left: 0; width: 22%; margin-bottom: 0; }  
+  .view-display-id-block_table_fourwide .views-row-last.listing-item { padding-right: 0; } 
+
+  /*.node-type-displaypage div[id^="player-"] { position: static !important; height: 400px !important; }
+  .node-type-displaypage div[id^="player-"][id$="_playlist"] { width: 40% !important; position: static !important; float: right; }
+  .node-type-displaypage div[id^="player-"][id$="_display"] { width: 60% !important; position: static !important; float: right; }
+  .node-type-displaypage div[id^="player-"][id$="_display"] iframe { width: 60% !important; height: 35% !important; } */
+
+
+} 
+
+@media all and (min-width: 1200px) {
+
+    .display-organisers .event-fourth-section-organisers-box h3 { margin-top: 2em; }
+
+    ul.flex-direction-nav { width: 92%; max-width: 1200px !important; left:0 !important; right:0; margin-left:auto !important; margin-right:auto !important; }
+    ul.flex-direction-nav a.flex-prev { left: 270px; }
+    ul.flex-direction-nav a.flex-next { left: 305px; } 
+
+    #result-view { position: relative; }
+    #result-header { min-width: 0 !important; width: 280px !important; padding-left: 30px; padding-right: 30px; position: absolute; right: 0; }
+
+}
+
+/* Safari and Chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0)  {
+ #header form input[type="submit"] { margin: 0 !important; padding: 4px 8px; }
+  /* .view-display-id-eventlisting .flex-control-paging li a { margin-bottom: 15px; }  */
+}
+
+/* @media screen and (-webkit-min-device-pixel-ratio:0) and (min-width: 960px)  {
+   .view-results-single-event.view-display-id-page .total-results { bottom: 274px; }
+}  */
+
+
+
+
+
